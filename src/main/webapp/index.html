@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CURD Servlet</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>Add New Users</h2>
+        <form action="SaveServlet" method="POST">
+            <table border="0">            
+                    <tr>
+                        <td style="font-weight: bold">Name: </td>
+                        <td><input type="text" name="name" value="" /></td>
+                    </tr>              
+                    <tr>
+                        <td style="font-weight: bold">Password: </td>
+                        <td><input type="password" name="pass" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold">Email: </td>
+                        <td><input type="text" name="mail" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold">Country: </td>
+                        <td><select name="country">
+                                <option value="vietnam">Việt Nam</option>
+                                <option value="us">US</option>
+                                <option value="uk">UK</option>
+                                <option value="others">Others</option>
+                            </select></td>
+                    </tr>               
+            </table>
+            <input type="submit" value="Save" />
+        </form>
+        <br>
+        <a href="ViewServlet">View Users</a>
+    </body>
+</html>
